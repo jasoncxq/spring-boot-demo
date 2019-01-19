@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>国家代码</title>
+</head>
+<body>
+    <div>
+        <ul th:each="country:${countrys}">
+            <li>
+                <p th:text="'daima:'+${country.countrycode}"></p>
+                <p th:text="'guojia:'+${country.countryname}"></p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
